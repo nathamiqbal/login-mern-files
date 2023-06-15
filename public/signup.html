@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function togglePasswordVisibility() {
+      var passwordInput = document.getElementById("password");
+      var checkbox = document.getElementById("showPassword");
+      
+      if (checkbox.checked) {
+        passwordInput.type = "text";
+      } else {
+        passwordInput.type = "password";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h2>Hi!!!</h2>
+  <h5>create a new account</h5>
+  <form action="/signup" method="POST">
+    <label for="name"></label>
+    <input type="text" id="name" name="name" placeholder="*Name" required><br><br>
+
+    <label for="email"></label>
+    <input type="email" id="email" name="email" placeholder="*Email" required><br><br>
+    <label for="password"></label>
+    <input type="password" id="password" name="password" placeholder="*Password" required><br><br>
+    <input type="checkbox" id="showPassword" onchange="togglePasswordVisibility()" />
+    
+    <input class="form-submit-button" type="submit" value="SIGNUP">
+    <br>
+    
+  </form>
+  <p class="tosignup" id="account">Already have an Account? <a href="./login.html" class="tosignup" id="signuplink">Sign in</a></p>
+</body>
+</html>

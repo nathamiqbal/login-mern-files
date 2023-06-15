@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Welcome!</h2>
+  <h5>Sign in to continue</h5>
+  <form action="/login" method="POST">
+    <label for="email"></label>
+    <input type="email" id="email" name="email" placeholder="*Email" required><br><br>
+    <label for="password"></label>
+    <input type="password" id="password" name="password" placeholder="*Password" required><br><br>
+    <input class="form-submit-button" type="submit" value="LOGIN">
+    <br>
+    <a href="#"  class="tosignup">Forgot password?</a>
+  </form>
+  <p class="tosignup" id="account">Don't have an Account? <a href="./signup.html" class="tosignup" id="signuplink">Sign up</a></p>
+</body>
+</html>
